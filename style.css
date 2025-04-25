@@ -22,16 +22,19 @@ h1{
     color: #F8F9FA;
     font-size: 45px;
     margin: 0;
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;  
+    font-weight: bold; 
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 p{
     color: #F8F9FA;
     font-size: large;
     margin-top: 20px;
-    font-weight: 900; 
-    letter-spacing: 0.5px; 
-   
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
 
 #scoreBoard{
