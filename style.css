@@ -7,9 +7,9 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
 
 }
+
 #titles{
     display:flex;
     flex-direction: column;
@@ -18,6 +18,7 @@ body{
     text-align: center;
     margin: 0; padding: 0;
 }
+
 h1{
     color: #F8F9FA;
     font-size: 45px;
@@ -27,7 +28,8 @@ h1{
     font-optical-sizing: auto;
     font-style: normal;
 }
-p{
+
+#statusText{
     color: #F8F9FA;
     font-size: large;
     margin-top: 20px;
@@ -45,24 +47,34 @@ p{
     justify-content: space-between;
 
 }
-.player{
-        height: 40px;
-        width: 150px;
-        background-color: #FF9F1C;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #F0F9FF ;
-        font-weight: bolder;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.player:hover{
-        background-color: #F0F9FF;
-        color: #3F4F44;
+
+.player {
+    height: 40px;
+    width: 150px;
+    background-color: #3F4F44; /* Changed from orange to match board */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F0F9FF;
+    font-weight: bolder; 
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease; /* Added for smooth transition */
 }
 
+.player.active {
+    background-color: #FF9F1C;
+    color: #3F4F44;
+}
+
+.player:hover {
+    background-color: #F0F9FF;
+    color: #3F4F44;
+}
 
 #gameBoard{
 
@@ -72,6 +84,7 @@ p{
     gap: 5px; /* Hücreler arası boşluk */
 
 }
+
 .cell{
     width: 100px;
     height: 100px;
@@ -79,7 +92,10 @@ p{
     cursor: pointer;
     background-color: #3F4F44;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder; 
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 50px;
     color: #FF9F1C; /* Turuncu */
     display: flex;
@@ -93,6 +109,7 @@ p{
 button{
     height: 50px; width: 150px;
     border-radius: 50px;
+    margin-bottom: 50px;
     background-color: #F0F9FF;
     border: none;
     color: #3F4F44;
@@ -101,4 +118,5 @@ button{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
 }
+
 
